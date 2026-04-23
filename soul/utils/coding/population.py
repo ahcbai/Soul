@@ -1,28 +1,3 @@
-"""
-Filename:
-    population.py
-
-Author:
-    Weisong Zhang <zws1415@zju.edu.cn>
-
-Date Created:
-    2025-11-20
-
-Description:
-    Population coding identical in formula and broadcasting semantics to
-    Norse's PopulationEncoder: Gaussian tuning curves with uniformly
-    spaced centers on [low, high]. This wrapper exposes a two-argument
-    interface encode(inputs, num_steps). If num_steps>1, the encoded
-    tensor is simply repeated along a new leading time dimension to
-    satisfy time-first pipelines without altering the encoding.
-
-References:
-    - Norse docs: norse.torch.module.encode.PopulationEncoder
-      https://norse.github.io/norse/generated/norse.torch.module.encode.PopulationEncoder.html
-    - Norse docs: norse.torch.functional.encode (population encoding)
-      https://norse.github.io/norse/auto_api/norse.torch.functional.encode.html
-"""
-
 from __future__ import annotations
 import torch
 

@@ -1,21 +1,3 @@
-"""
-Filename:
-    spikingvgg.py
-
-Author:
-    Helin Zheng <22551146@zju.edu.cn>
-
-Date Created:
-    2026-01-02
-
-Description:
-    Adaption for VGG-structured spiking neural networks for wireless classification.
-
-References:
-    - Di Yu et al., "EC-SNN: Splitting Deep Spiking Neural Networks for Edge Devices", IJCAI'2024.
-      https://github.com/AmazingDD/EC-SNN/
-"""
-
 import torch
 import torch.nn as nn
 import torch.nn.functional as F

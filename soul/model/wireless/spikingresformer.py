@@ -1,20 +1,3 @@
-"""
-Filename:
-    spikingresformer.py
-
-Author:
-    Helin Zheng <22551146@zju.edu.cn>
-
-Date Created:
-    2026-01-02
-
-Description:
-    Adaption for a transformer-structured SNN model for wireless classification.
-
-References:
-    - Xinyu Shi et al., "SpikingResformer: Bridging ResNet and Vision Transformer in Spiking Neural Networks", CVPR'2024.
-      https://github.com/xyshi2000/SpikingResformer
-"""
 import torch
 import torch.nn as nn
 from copy import deepcopy

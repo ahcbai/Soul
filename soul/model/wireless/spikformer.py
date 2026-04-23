@@ -1,20 +1,3 @@
-"""
-Filename:
-    spikformer.py
-
-Author:
-    Helin Zheng <22551146@zju.edu.cn>
-
-Date Created:
-    2026-01-02
-
-Description:
-    Adaption for a transformer-structured SNN model for wireless classification.
-
-References:
-    - Zhaokun Zhou et al., "Spikformer: when spiking neural network meets transformer", ICLR'2023.
-      https://github.com/ZK-Zhou/spikformer
-"""
 import torch
 import torch.nn as nn
 from copy import deepcopy

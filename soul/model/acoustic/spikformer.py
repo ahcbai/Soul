@@ -1,20 +1,3 @@
-"""
-Filename:
-    spikformer.py
-
-Author:
-    Weisong Zhang <22551070@zju.edu.cn>
-
-Date Created:
-    2026-01-02
-
-Description:
-    Adaptation for a transformer-structured SNN model for audio classification.
-
-References:
-    - Zhaokun Zhou et al., "Spikformer: when spiking neural network meets transformer", ICLR'2023.
-      https://github.com/ZK-Zhou/spikformer
-"""
 import torch
 import torch.nn as nn
 from copy import deepcopy

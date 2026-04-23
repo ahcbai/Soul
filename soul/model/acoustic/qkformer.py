@@ -1,20 +1,3 @@
-"""
-Filename:
-    qkformer.py
-
-Author:
-    Weisong Zhang <22551070@zju.edu.cn>
-
-Date Created:
-    2026-01-03
-
-Description:
-    Adaptation for a transformer-structured SNN model for audio classification.
-
-References:
-    - Chenlin Zhou et al., "QKFormer: Hierarchical Spiking Transformer using Q-K Attention", NeurIPS'2024.
-      https://github.com/zhouchenlin2096/QKFormer
-"""
 import torch
 import torch.nn as nn
 from copy import deepcopy

@@ -1,13 +1,3 @@
-'''
-Filename: sigmoid.py
-Author: Di Yu <yudi2023@zju.edu.cn>
-Date Created: 2025-06-01
-Description:
-    The sigmoid surrogate spiking function.
-
-References:
-    - Woźniak S. et al., "Deep learning incorporating biologically inspired neural dynamics and in-memory computing", Nat. Mach. Intell.'2020.
-'''
 import torch
 
 from .base import SurrogateFunctionBase, HeavisideFunction

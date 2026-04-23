@@ -1,20 +1,3 @@
-"""
-Filename:
-    sewmsresnetresnet.py
-
-Author:
-    Di Yu <yudi2023@zju.edu.cn>
-
-Date Created:
-    2025-06-03
-
-Description:
-    Adaptation for ResNet-structured spiking neural networks for audio classification.
-
-References:
-    - Yifan Hu et al., "Advancing spiking neural networks toward deep residual learning", TNNLS'2024.
-      https://github.com/Ariande1/MS-ResNet
-"""
 import torch
 import torch.nn as nn
 from copy import deepcopy

@@ -1,21 +1,3 @@
-"""
-Filename:
-    flops.py
-
-Author:
-    Soul Framework
-
-Date Created:
-    2025-01-04
-
-Description:
-    Implementation of counting FLOPs (Floating Point Operations) for neural networks
-    using the thop library.
-
-References:
-    - thop: PyTorch-OpCounter
-    https://github.com/Lyken17/pytorch-OpCounter
-"""
 import torch
 import torch.nn as nn
 from typing import Tuple, Optional, Dict, Callable, Union

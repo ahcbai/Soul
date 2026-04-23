@@ -1,20 +1,3 @@
-"""
-Filename:
-    dcnn.py
-
-Author:
-    Di Yu <yudi2023@zju.edu.cn>
-
-Date Created:
-    2025-07-15
-
-Description:
-    implementation for spike-wise DCNN-structured model for HAR.
-
-References:
-    - Yang Jianbo et al., "Deep Convolutional Neural Networks On Multichannel Time Series For Human Activity Recognition", IJCAI'2015.
-      https://github.com/gongchenooo/MobiCom24-Delta
-"""
 import torch
 import torch.nn as nn
 

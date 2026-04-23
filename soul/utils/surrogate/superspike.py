@@ -1,13 +1,3 @@
-'''
-Filename: superspike.py
-Author: Di Yu <yudi2023@zju.edu.cn>
-Date Created: 2025-06-02
-Description:
-    The super-spike surrogate spiking function.
-
-References:
-    - Zenke F. et al., "Superspike: Supervised learning in multilayer spiking neural networks", Neural computation'2018.
-'''
 import math
 import torch
 from .base import SurrogateFunctionBase, HeavisideFunction

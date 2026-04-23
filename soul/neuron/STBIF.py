@@ -1,20 +1,3 @@
-"""
-Filename:
-    STBIF.py
-
-Author:
-    Changze Lv <czlv24@m.fudan.edu.cn>
-
-Date Created:
-    2025-05-15
-
-Description:
-    implementation for LIF variants for Spiking Neural Networks.
-
-References:
-    - Kang You et al., "VISTREAM: Improving Computation Efficiency of Visual Streaming Perception via Law-of-Charge-Conservation Inspired Spiking Neural Network", CVPR'2025.
-    https://github.com/Intelligent-Computing-Research-Group/ViStream
-"""
 import torch
 from soul.neuron.LIF import BaseNode
 

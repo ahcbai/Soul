@@ -1,20 +1,3 @@
-"""
-Filename:
-    sewmsresnetresnet.py
-
-Author:
-    Helin Zheng <22551146@zju.edu.cn>
-
-Date Created:
-    2026-01-02
-
-Description:
-    Adaptation for ResNet-structured spiking neural networks for moition classification.
-
-References:
-    - Yifan Hu et al., "Advancing spiking neural networks toward deep residual learning", TNNLS'2024.
-      https://github.com/Ariande1/MS-ResNet
-"""
 import torch
 import torch.nn as nn
 from copy import deepcopy

@@ -1,23 +1,3 @@
-'''
-Filename:
-    acoustic_dataset.py
-
-Author:
-    Di Yu <yudi2023@zju.edu.cn>
-
-Date Created:
-    2025-07-30
-
-Description:
-    Load data from acoustic sensor. For those audio file without preprocessing, 
-    we choose mel-frequency spectrogram to convert, shape as [window size, num channels].
-    For the dynamic acoustic sensing (DAS) datasets, we process them similarly into [window size, num channels].
-
-References:
-    - Hanle Zheng et al. "Temporal dendritic heterogeneity incorporated with spiking neural networks for learning multi-timescale dynamics." Nature Communications 2023.
-    - Xinyi Chen et al. "Neuromorphic Sequential Arena: A Benchmark for Neuromorphic Temporal Processing." IJCAI'2025.
-    https://github.com/liyc5929/neuroseqbench
-'''
 import os
 import cv2
 import h5py

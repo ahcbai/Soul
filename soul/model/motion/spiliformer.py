@@ -1,21 +1,3 @@
-"""
-Filename:
-    spiliformer.py
-
-Author:
-    Di Yu <yudi2023@zju.edu.cn>
-
-Date Created:
-    2026-03-05
-
-Description:
-    implementation for a transformer-structured SNN model for image classification.
-
-References:
-    - Zeqi Zheng et al., "SpiLiFormer: Enhancing Spiking Transformers with Lateral Inhibition", ICCV'2025.
-      https://github.com/KirinZheng/SpiLiFormer
-"""
-
 import torch
 import torch.nn as nn
 import torch.nn.functional as F

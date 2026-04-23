@@ -1,24 +1,3 @@
-"""
-Filename:
-    bsa.py
-
-Author:
-    Weisong Zhang <zws1415@zju.edu.cn>
-
-Date Created:
-    2025-11-20
-
-Description:
-    Ben's Spiker Algorithm with shape-aware routing:
-      - vision:  (C,H,W) -> (T,C,H,W)
-      - motion:  (W,C)   -> (T,W,C)
-    Per-channel min-max normalization; causal kernel; greedy residue update;
-    strength -> latency mapping (stronger -> earlier).
-
-References:
-    - Schrauwen & Van Campenhout, IJCNN 2003 (BSA)
-    - Auge et al., Neural Processing Letters 2021 (Survey)
-"""
 from __future__ import annotations
 import torch
 

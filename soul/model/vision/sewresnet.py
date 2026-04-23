@@ -1,20 +1,3 @@
-"""
-Filename:
-    sewresnet.py
-
-Author:
-    Di Yu <yudi2023@zju.edu.cn>
-
-Date Created:
-    2025-06-02
-
-Description:
-    implementation for ResNet-structured spiking neural networks for image classification.
-
-References:
-    - Wei Fang et al., "Deep residual learning in spiking neural networks", NeurIPS'2021.
-      https://github.com/fangwei123456/Spike-Element-Wise-ResNet
-"""
 import torch
 import torch.nn as nn
 

@@ -1,13 +1,3 @@
-"""
-Filename: qpseudo.py
-Author: Di Yu <yudi2023@zju.edu.cn>
-Date Created: 2025-06-02
-Description:
-    The q-PseudoSpike surrogate spiking function
-
-References:
-    - Herranz-Celotti, L. et al., "Stabilizing Spiking Neuron Training", NeurIPS'2015.
-"""
 import torch
 from .base import SurrogateFunctionBase, HeavisideFunction
 

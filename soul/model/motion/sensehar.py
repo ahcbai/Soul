@@ -1,20 +1,3 @@
-"""
-Filename:
-    sensehar.py
-
-Author:
-    Di Yu <yudi2023@zju.edu.cn>
-
-Date Created:
-    2025-07-16
-
-Description:
-    implementation for spike-wise SenseHAR for HAR.
-
-References:
-    - Jeyakumar J.V. et al., "SenseHAR: A Robust Virtual Activity Sensor for Smartphones and Wearables", SenSys'2019.
-      https://github.com/devanshuDesai/SenseHAR
-"""
 import torch
 import torch.nn as nn
 

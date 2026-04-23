@@ -1,20 +1,3 @@
-"""
-Filename:
-    INTLIF.py
-
-Author:
-    Changze Lv <czlv24@m.fudan.edu.cn>
-
-Date Created:
-    2025-05-07
-
-Description:
-    implementation for LIF variants for Spiking Neural Networks.
-
-References:
-    - Xinhao Luo et al., "Integer-valued training and spike-driven inference spiking neural network for high-performance and energy-efficient object detection", ECCV'2024.
-    https://github.com/BICLab/SpikeYOLO
-"""
 import torch
 from typing import Callable
 from abc import abstractmethod

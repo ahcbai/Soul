@@ -1,13 +1,3 @@
-'''
-Filename: exp.py
-Author: Di Yu <yudi2023@zju.edu.cn>
-Date Created: 2025-06-02
-Description:
-    The piecewise exponential surrogate spiking function.
-
-References:
-    - Shrestha, S. B. et al., "Slayer: Spike layer error reassignment in time", NeurIPS'2018.
-'''
 import torch
 from .base import SurrogateFunctionBase, HeavisideFunction
 

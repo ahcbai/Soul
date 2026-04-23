@@ -1,30 +1,3 @@
-"""
-Filename:
-    tsc.py
-
-Author:
-    Weisong Zhang <zws1415@zju.edu.cn>
-
-Date Created:
-    2025-11-24
-
-Description:
-    Temporal-Switch-Coding (TSC) encoder. Each input element is represented by
-    at most two bipolar spikes within T time steps. The inter-spike interval
-    (ISI) encodes the magnitude of the input, while the spike signs encode the
-    sign of the input.
-
-    For a pixel p ∈ [-1, 1] and N = T time steps:
-        p* = floor(|p| * (N - 1)) + 1
-    If p* ≥ 2, emit:
-        +sgn(p) at t = 1, and -sgn(p) at t = p*
-    Otherwise emit no spike.
-
-References:
-    - Han et al., "Deep Spiking Neural Network: Energy Efficiency
-      Through Time-Based Coding", ECCV, 2020. (TSC definition & properties)
-"""
-
 from __future__ import annotations
 import torch
 

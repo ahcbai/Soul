@@ -1,20 +1,3 @@
-"""
-Filename:
-    sewresnet.py
-
-Author:
-    Helin Zheng <22551146@zju.edu.cn>
-
-Date Created:
-    2026-01-02
-
-Description:
-    Adaption for ResNet-structured spiking neural networks for wireless classification.
-
-References:
-    - Wei Fang et al., "Deep residual learning in spiking neural networks", NeurIPS'2021.
-      https://github.com/fangwei123456/Spike-Element-Wise-ResNet
-"""
 import torch
 import torch.nn as nn
 

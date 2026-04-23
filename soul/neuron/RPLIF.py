@@ -1,20 +1,3 @@
-"""
-Filename:
-    RPLIF.py
-
-Author:
-    Changze Lv <czlv24@m.fudan.edu.cn>
-
-Date Created:
-    2025-11-10
-
-Description:
-    implementation for Refractory Period LIF.
-
-References:
-    - Li, Yang, et al., "Incorporating the Refractory Period into Spiking Neural Networks through Spike-Triggered Threshold Dynamics", MM'2025.
-    https://arxiv.org/pdf/2509.17769
-"""
 from abc import abstractmethod
 import torch
 from soul.neuron.LIF import BaseNode

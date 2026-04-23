@@ -1,21 +1,3 @@
-"""
-Filename:
-    spikingvgg.py
-
-Author:
-    Di Yu <yudi2023@zju.edu.cn>
-
-Date Created:
-    2025-07-07
-
-Description:
-    implementation for VGG-structured spiking neural networks for image classification.
-
-References:
-    - Di Yu et al., "EC-SNN: Splitting Deep Spiking Neural Networks for Edge Devices", IJCAI'2024.
-      https://github.com/AmazingDD/EC-SNN/
-"""
-
 import torch
 import torch.nn as nn
 import torch.nn.functional as F

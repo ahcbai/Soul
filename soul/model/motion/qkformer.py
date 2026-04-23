@@ -1,20 +1,3 @@
-"""
-Filename:
-    qkformer.py
-
-Author:
-    Helin Zheng <22551146@zju.edu.cn>
-
-Date Created:
-    2026-01-02
-
-Description:
-    Adaptation for a transformer-structured SNN model for moition classification.
-
-References:
-    - Chenlin Zhou et al., "QKFormer: Hierarchical Spiking Transformer using Q-K Attention", NeurIPS'2024.
-      https://github.com/zhouchenlin2096/QKFormer
-"""
 import torch
 import torch.nn as nn
 from copy import deepcopy

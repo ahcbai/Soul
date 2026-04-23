@@ -1,24 +1,3 @@
-'''
-Filename:
-    motion_dataset.py
-
-Author:
-    Di Yu <yudi2023@zju.edu.cn>
-
-Date Created:
-    2025-07-10
-
-Description:
-    Load data from motion sensor. For those data without preprocessing, 
-    we refer to the processing method of UCI HAR and samling in fixed-width 
-    sliding windows with 128 readings/window and 50% overlap.
-
-References:
-    - Malekzadeh, M. et al., "Mobile Sensor Data Anonymization", IoTDI'2019.
-    https://github.com/mmalekzadeh/motion-sense
-    - Riccardo Presotto et al., "Combining Public Human Activity Recognition Datasets to Mitigate Labeled Data Scarcity", SMARTCOMP'2023
-    https://github.com/getalp/SmartComp2023-HAR-Supervised-Pretraining
-'''
 import os
 import random
 import numpy as np

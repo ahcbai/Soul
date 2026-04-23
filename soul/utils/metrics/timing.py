@@ -1,29 +1,3 @@
-'''
-Filename:
-    run_stream_latency.py
-
-Author:
-    Di Yu <yudi2023@zju.edu.cn>
-
-Date Created:
-    2026-01-05
-
-Description:
-    MLPerf Single-Stream Latency Benchmark for Edge Devices.
-    Uses Soul framework APIs for model creation and dataset loading.
-    
-    This script measures inference latency following MLPerf Inference benchmark
-    methodology for multi-stream scenario. Designed to run on edge devices like:
-    - Raspberry Pi
-    - NVIDIA Jetson (Nano/TX2/Xavier/Orin)
-    - Android smartphones (via Termux or similar)
-    - Other ARM/x86 edge platforms
-
-References:
-    - MLPerf Inference Benchmark: https://github.com/mlcommons/inference
-    - MLPerf Inference Rules: https://github.com/mlcommons/inference_policies
-
-'''
 import torch
 import torch.nn as nn
 

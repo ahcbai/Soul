@@ -1,21 +1,3 @@
-"""
-Filename:
-    base.py
-
-Author:
-    Changze Lv <czlv24@m.fudan.edu.cn>
-
-Date Created:
-    2025-04-20
-
-Description:
-    implementation of the basic fundation of spiking neurons.
-
-References:
-    - Wei Fang et al., "SpikingJelly: An open-source machine learning infrastructure platform for spike-based intelligence", Science Advances'2023.
-    https://github.com/fangwei123456/spikingjelly
-"""
-
 import copy
 from abc import abstractmethod
 
