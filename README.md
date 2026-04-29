@@ -94,7 +94,7 @@ For each encoding method, we provide its **Original Reference** to facilitate re
 ---
 ### LIF-Based Neuron Variants
 
-For each lif-based neuron variant, we provide its **Original Reference** to facilitate reproducibility.
+For each lif-based neuron variant, we provide its **Original Reference** to facilitate reproducibility and proper academic attribution.
 
 - GLIF [Research Link](https://proceedings.neurips.cc/paper_files/paper/2022/hash/cfa8440d500a6a6867157dfd4eaff66e-Abstract-Conference.html)
 - INTLIF [Research Link](https://link.springer.com/chapter/10.1007/978-3-031-73411-3_15)
