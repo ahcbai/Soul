@@ -3,7 +3,7 @@ This repository is maintained anonymously for the paper submitted to NeurIPS 202
 This project provides implementations and benchmarks of representative SNN neuron models and network algorithms up to the end of 2025, serving as a **versioned snapshot of the current methodological landscape**.
 
 > Methods released in 2026 are explicitly considered out-of-scope for this release, as the benchmark is intended to be a **curated and fixed evaluation suite rather than a continuously expanding collection**.
-While we acknowledge that new methods will continue to emerge, incorporating them requires a§§ separate curation and validation cycle to ensure fairness and consistency of comparison.
+While we acknowledge that new methods will continue to emerge, incorporating them requires a separate curation and validation cycle to ensure fairness and consistency of comparison.
 We plan to periodically update the benchmark in future releases, with a dedicated 2026 update covering representative methods introduced during that year.
 
 ### Usage
@@ -23,6 +23,19 @@ CUDA_VISIBLE_DEVICES=[GPU_ID] python run_soul.py \
 We provide all experimental commands described in the paper in the `scripts` directory for reproducibility.
 
 **Any use, reproduction, or distribution of this code without prior written permission from the authors is strictly prohibited.**
+
+To run the neuromorphic chip simulator, you can run the following command after preparing the corresponding model:
+
+```
+CUDA_VISIBLE_DEVICES=0 python run_sim.py \
+  --dataset [DATASET_NAME] \
+  --data_dir [DATASET_DIRECTORY] \
+  --model_dir [SAVED_MODEL_DIR] \
+  --arch [CHIP_TYPE] \
+  --model [MODEL_NAME] \
+  --seed [SEED_NUMBER] \
+  --batch_size 1
+```
 
 ---
 ### Dataset Support
@@ -85,38 +98,38 @@ For each dataset, we provide a **Download Link** to facilitate integration with 
 
 For each encoding method, we provide its **Original Reference** to facilitate reproducibility and proper academic attribution.
 
-- Rate coding [Research Link](https://ieeexplore.ieee.org/abstract/document/10242251)
-- Time-to-first-spike (TTFS) coding [Research Link](https://ieeexplore.ieee.org/abstract/document/10242251)
-- Burst coding [Research Link](https://www.frontiersin.org/journals/neuroscience/articles/10.3389/fnins.2021.638474/full)
-- Phase coding [Research Link](https://ieeexplore.ieee.org/abstract/document/10502282)
-- Temporal-switch (TS) coding [Research Link](https://link.springer.com/chapter/10.1007/978-3-030-58607-2_23)
+- Rate coding [Paper Link](https://ieeexplore.ieee.org/abstract/document/10242251)
+- Time-to-first-spike (TTFS) coding [Paper Link](https://ieeexplore.ieee.org/abstract/document/10242251)
+- Burst coding [Paper Link](https://www.frontiersin.org/journals/neuroscience/articles/10.3389/fnins.2021.638474/full)
+- Phase coding [Paper Link](https://ieeexplore.ieee.org/abstract/document/10502282)
+- Temporal-switch (TS) coding [Paper Link](https://link.springer.com/chapter/10.1007/978-3-030-58607-2_23)
 
 ---
 ### LIF-Based Neuron Variants
 
 For each lif-based neuron variant, we provide its **Original Reference** to facilitate reproducibility and proper academic attribution.
 
-- GLIF [Research Link](https://proceedings.neurips.cc/paper_files/paper/2022/hash/cfa8440d500a6a6867157dfd4eaff66e-Abstract-Conference.html)
-- INTLIF [Research Link](https://link.springer.com/chapter/10.1007/978-3-031-73411-3_15)
-- PSN [Research Link](https://proceedings.neurips.cc/paper_files/paper/2023/hash/a834ac3dfdb90da54292c2c932c997cc-Abstract-Conference.html)
-- TLIF [Research Link](https://ojs.aaai.org/index.php/AAAI/article/view/29114)
-- PLIF [Research Link](http://openaccess.thecvf.com/content/ICCV2021/html/Fang_Incorporating_Learnable_Membrane_Time_Constant_To_Enhance_Learning_of_Spiking_ICCV_2021_paper.html)
-- CLIF [Research Link](https://arxiv.org/abs/2402.04663)
-- ILIF [Research Link](https://arxiv.org/abs/2505.10371)
-- RPLIF [Research Link](https://dl.acm.org/doi/abs/10.1145/3746027.3755030)
+- GLIF [Paper Link](https://proceedings.neurips.cc/paper_files/paper/2022/hash/cfa8440d500a6a6867157dfd4eaff66e-Abstract-Conference.html)
+- INTLIF [Paper Link](https://link.springer.com/chapter/10.1007/978-3-031-73411-3_15)
+- PSN [Paper Link](https://proceedings.neurips.cc/paper_files/paper/2023/hash/a834ac3dfdb90da54292c2c932c997cc-Abstract-Conference.html)
+- TLIF [Paper Link](https://ojs.aaai.org/index.php/AAAI/article/view/29114)
+- PLIF [Paper Link](http://openaccess.thecvf.com/content/ICCV2021/html/Fang_Incorporating_Learnable_Membrane_Time_Constant_To_Enhance_Learning_of_Spiking_ICCV_2021_paper.html)
+- CLIF [Paper Link](https://arxiv.org/abs/2402.04663)
+- ILIF [Paper Link](https://arxiv.org/abs/2505.10371)
+- RPLIF [Paper Link](https://dl.acm.org/doi/abs/10.1145/3746027.3755030)
 
 ---
 ### Architectures for Spiking Neural Networks
 
 For each architecture, we provide its **Original Reference** to facilitate reproducibility and proper academic attribution.
 
-- SpikingVGG [Research Link](https://www.ijcai.org/proceedings/2024/0596.pdf)
-- SEW-ResNet [Research Link](https://proceedings.neurips.cc/paper/2021/hash/afe434653a898da20044041262b3ac74-Abstract.html)
-- MS-ResNet [Research Link](https://ieeexplore.ieee.org/abstract/document/10428029)
-- Spikformer [Research Link](https://arxiv.org/abs/2209.15425)
-- Meta-Spikeformer [Research Link](https://arxiv.org/abs/2404.03663)
-- QKFormer [Research Link](https://proceedings.neurips.cc/paper_files/paper/2024/hash/179f5dcdeedc149443ebd3ba70811dbd-Abstract-Conference.html)
-- SpikingResFormer [Research Link](http://openaccess.thecvf.com/content/CVPR2024/html/Shi_SpikingResformer_Bridging_ResNet_and_Vision_Transformer_in_Spiking_Neural_Networks_CVPR_2024_paper.html)
+- SpikingVGG [Paper Link](https://www.ijcai.org/proceedings/2024/0596.pdf)
+- SEW-ResNet [Paper Link](https://proceedings.neurips.cc/paper/2021/hash/afe434653a898da20044041262b3ac74-Abstract.html)
+- MS-ResNet [Paper Link](https://ieeexplore.ieee.org/abstract/document/10428029)
+- Spikformer [Paper Link](https://arxiv.org/abs/2209.15425)
+- Meta-Spikeformer [Paper Link](https://arxiv.org/abs/2404.03663)
+- QKFormer [Paper Link](https://proceedings.neurips.cc/paper_files/paper/2024/hash/179f5dcdeedc149443ebd3ba70811dbd-Abstract-Conference.html)
+- SpikingResFormer [Paper Link](http://openaccess.thecvf.com/content/CVPR2024/html/Shi_SpikingResformer_Bridging_ResNet_and_Vision_Transformer_in_Spiking_Neural_Networks_CVPR_2024_paper.html)
 
 ---
 ### Acknowledgement
