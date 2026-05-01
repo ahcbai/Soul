@@ -2,10 +2,11 @@ This repository is maintained anonymously for the paper submitted to NeurIPS 202
 
 This project provides implementations and benchmarks of representative SNN neuron models and network algorithms up to the end of 2025, serving as a **versioned snapshot of the current methodological landscape**.
 
-> Methods released in 2026 are explicitly considered out-of-scope for this release, as the benchmark is intended to be a **curated and fixed evaluation suite rather than a continuously expanding collection**.
+> ***Notice:*** Methods released in 2026 are explicitly considered out-of-scope for this release, as the benchmark is intended to be a **curated and fixed evaluation suite rather than a continuously expanding collection**.
 While we acknowledge that new methods will continue to emerge, incorporating them requires a separate curation and validation cycle to ensure fairness and consistency of comparison.
 We plan to periodically update the benchmark in future releases, with a dedicated 2026 update covering representative methods introduced during that year.
 
+---
 ### Usage
 
 You can run the library on a single GPU from the command line:
@@ -22,12 +23,10 @@ CUDA_VISIBLE_DEVICES=[GPU_ID] python run_soul.py \
 
 We provide all experimental commands described in the paper in the `scripts` directory for reproducibility.
 
-**Any use, reproduction, or distribution of this code without prior written permission from the authors is strictly prohibited.**
-
 To run the neuromorphic chip simulator, you can run the following command after preparing the corresponding model:
 
-```
-CUDA_VISIBLE_DEVICES=0 python run_sim.py \
+```bash
+CUDA_VISIBLE_DEVICES=[GPU_ID] python run_sim.py \
   --dataset [DATASET_NAME] \
   --data_dir [DATASET_DIRECTORY] \
   --model_dir [SAVED_MODEL_DIR] \
@@ -37,60 +36,48 @@ CUDA_VISIBLE_DEVICES=0 python run_sim.py \
   --batch_size 1
 ```
 
+**Any use, reproduction, or distribution of this code without prior written permission from the authors is strictly prohibited.**
+
 ---
 ### Dataset Support
 
 For each dataset, we provide a **Download Link** to facilitate integration with the toolkit.
 
-<details>
-  <summary><b>Vision Sensing</b></summary>
+Vision Sensing
 
 - CIFAR10/100 [Download Link](https://www.cs.toronto.edu/~kriz/cifar.html)
 - SVHN [Download Link](http://ufldl.stanford.edu/housenumbers/)
 - MNIST [Download Link](https://www.kaggle.com/datasets/hojjatk/mnist-dataset/)
 - Fashion-MNIST [Download Link](https://github.com/zalandoresearch/fashion-mnist)
 
-</details>
 
-<details>
-  <summary><b>Motion Sensing</b></summary>
+Motion Sensing
 
 - UCI HAR [Download Link](https://archive.ics.uci.edu/dataset/240/human+activity+recognition+using+smartphones)
 - HHAR [Download Link](https://archive.ics.uci.edu/dataset/344/heterogeneity+activity+recognition)
 - MotionSense	[Download Link](https://www.kaggle.com/datasets/malekzadeh/motionsense-dataset)
 - Shoaib [Download Link](https://www.researchgate.net/publication/266384007_Sensors_Activity_Recognition_DataSet)
 
-</details>
-
-<details>
-  <summary><b>Acoustic Sensing</b></summary>
+Acoustic Sensing
 
 - UrbanSound8K [Download Link](https://urbansounddataset.weebly.com/download-urbansound8k.html)
 - GSC [Download Link](https://huggingface.co/datasets/google/speech_commands)
 - GTZAN [Download Link](https://www.kaggle.com/datasets/andradaolteanu/gtzan-dataset-music-genre-classification)
 - ESC-50 [Download Link](https://github.com/karoldvl/ESC-50/archive/master.zip)
 
-</details>
-
-<details>
-  <summary><b>Wireless Sensing</b></summary>
+Wireless Sensing
 
 - Fi-Humanoid [Download Link](https://drive.google.com/drive/folders/1R0R8SlVbLI1iUFQCzh_mH90H_4CW2iwt)
 - BullyDetect [Download Link](http://www.sdp8.net/Dataset?id=5ab0f5fd-a678-400a-afb2-757b2d85bc68)
 - ARIL [Download Link](http://www.sdp8.net/Dataset?id=9d263468-4869-4dbb-85aa-2c63ba0a1e0f)
 - UT-HAR [Download Link](https://github.com/ermongroup/Wifi_Activity_Recognition?tab=readme-ov-file)
 
-</details>
-
-<details>
-  <summary><b>Neuromorphic Sensing</b></summary>
+Neuromorphic Sensing
 
 - CIFAR10-DVS [Download Link](https://figshare.com/articles/dataset/CIFAR10-DVS_New/4724671)
 - DVS-Gesture [Download Link](https://ibm.ent.box.com/s/3hiq58ww1pbbjrinh367ykfdf60xsfm8/folder/50167556794)
 - Spiking HD [Download Link](https://zenkelab.org/resources/spiking-heidelberg-datasets-shd/)
 - Spiking SC [Download Link](https://zenkelab.org/resources/spiking-heidelberg-datasets-shd/)
-
-</details>
 
 ---
 
