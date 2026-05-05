@@ -30,7 +30,7 @@ CUDA_VISIBLE_DEVICES=[GPU_ID] python run_sim.py \
   --dataset [DATASET_NAME] \
   --data_dir [DATASET_DIRECTORY] \
   --model_dir [SAVED_MODEL_DIR] \
-  --arch Loihi \
+  --arch loihi \
   -m [MODEL_NAME] \
   --seed [SEED_NUMBER] \
   -b 1
@@ -111,7 +111,7 @@ For each lif-based neuron variant, we provide its **Original Reference** to faci
 For each architecture, we provide its **Original Reference** to facilitate reproducibility and proper academic attribution.
 
 - SpikingVGG [Paper Link](https://www.ijcai.org/proceedings/2024/0596.pdf) `-m=spikingvgg9`
-- SEW-ResNet [Paper Link](https://proceedings.neurips.cc/paper/2021/hash/ afe434653a898da20044041262b3ac74-Abstract.html) `-m=sewresnet34`
+- SEW-ResNet [Paper Link](https://proceedings.neurips.cc/paper/2021/hash/afe434653a898da20044041262b3ac74-Abstract.html) `-m=sewresnet34`
 - MS-ResNet [Paper Link](https://ieeexplore.ieee.org/abstract/document/10428029) `-m=msresnet34`
 - Spikformer [Paper Link](https://arxiv.org/abs/2209.15425) `-m=spikformer256`
 - Meta-Spikeformer [Paper Link](https://arxiv.org/abs/2404.03663) `-m=metaspikeformer256`
