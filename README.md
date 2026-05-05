@@ -23,17 +23,17 @@ CUDA_VISIBLE_DEVICES=[GPU_ID] python run_soul.py \
 
 We provide all experimental commands described in the paper in the `scripts` directory for reproducibility.
 
-To run the neuromorphic chip simulator, you can run the following command after preparing the corresponding model:
+To run the neuromorphic chip simulator like Loihi, you can run the following command after preparing the corresponding model:
 
 ```bash
 CUDA_VISIBLE_DEVICES=[GPU_ID] python run_sim.py \
   --dataset [DATASET_NAME] \
   --data_dir [DATASET_DIRECTORY] \
   --model_dir [SAVED_MODEL_DIR] \
-  --arch [CHIP_TYPE] \
-  --m [MODEL_NAME] \
+  --arch Loihi \
+  -m [MODEL_NAME] \
   --seed [SEED_NUMBER] \
-  --b 1
+  -b 1
 ```
 
 **Any use, reproduction, or distribution of this code without prior written permission from the authors is strictly prohibited.**
